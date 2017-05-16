@@ -1,0 +1,6 @@
+com/sazlabs/services/JobServices.class
+com/sazlabs/SazLabsNewApplication.class
+com/sazlabs/controller/JobsController.class
+com/sazlabs/ServletInitializer.class
+com/sazlabs/services/JobCrudRepository.class
+com/sazlabs/controller/JobModel.class

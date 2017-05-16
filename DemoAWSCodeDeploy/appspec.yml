@@ -1,0 +1,15 @@
+version: 0.0
+os: linux
+files:
+  - source: /DemoAWSCodeDeploy/target/DemoAWSCodeDeploy-1.0-SNAPSHOT.war
+    destination: /tmp/codedeploy-deployment-staging-area/
+hooks:
+  ApplicationStop:
+    - location: DemoAWSCodeDeploy/scripts/stop_application
+      timeout: 300
+  BeforeInstall:
+    - location: DemoAWSCodeDeploy/scripts/install_dependencies
+      timeout: 300
+  ApplicationStart:
+    - location: DemoAWSCodeDeploy/scripts/start_application
+      timeout: 300
